@@ -1,0 +1,1103 @@
+<html>
+    <body>
+        <header class="header">
+          <a href="#" class="logo">ETERNISE</a>
+          <nav class="nav-items">
+            <a href="website.html">HOME</a>
+            <a href="Untitled-1.html">PRODUCT</a>
+            <a href="Untitled-2.html">ABOUT</a>
+            <a href="login.html">LOGIN/SIGNUP</a>
+          </nav>
+          </header>
+       
+        </body>
+<div class="container">
+    <div class="message signup">
+      <div class="btn-wrapper">
+        <button class="button" id="signup">Sign Up</button>
+        <button class="button" id="login"> Login</button>
+      </div>
+    </div>
+    <div class="form form--signup">
+      <div class="form--heading">Welcome! Sign Up</div>
+      <form autocomplete="off">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="button">Sign Up</button>
+      </form>
+    </div>
+    <div class="form form--login">
+      <div class="form--heading">Welcome back! </div>
+      <form autocomplete="off">
+        <input type="text" placeholder="Name">
+        <input type="password" placeholder="Password">
+        <button class="button">Login</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Social Links</span>
+        <a href="media.html">Social Links</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <style>
+   
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+/* CSS for main element */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://th.bing.com/th/id/R.eae00c06fa9fc5df38cfe2a4407e546f?rik=nzpjHMJlceLAbg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #6bb9f5;
+  color: #f7f6f6;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(249, 245, 245, 0.4)
+}
+
+
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d692b7;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+body,
+.message,
+.form,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  background: #e8e8e8;
+  font-family: $font;
+  overflow: hidden;
+}
+.container {
+  width: 700px;
+  height: 400px;
+  background: white;
+  position: relative;
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  box-shadow: 2px 2px 10px 0 rgba(#333, 0.2);
+}
+
+.message {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: translateX(100%);
+  z-index: 4;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 70%;
+    background: $grey;
+    opacity: 0;
+    left: 0;
+    top: 15%;
+  }
+
+  .button {
+    margin: 5px 0;
+  }
+}
+
+.signup {
+  &:before {
+    opacity: 0.3;
+    left: 0;
+  }
+}
+
+.login {
+  &:before {
+    opacity: 0.3;
+    left: 100%;
+  }
+}
+
+.btn-wrapper {
+  width: 60%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+
+  &--heading {
+    font-size: 25px;
+    height: 50px;
+    color: #e42a62;
+    font-family: $font;
+  }
+  
+  &--signup {
+    border-right: 1px solid #999;
+  }
+}
+
+form {
+  width: 70%;
+  > * {
+    margin: 10px;
+  }
+  input {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    font-size: 13px;
+    font-weight: 300;
+    color: #797a9e;
+    letter-spacing: 0.11em;
+
+    &::placeholder {
+      color: #333;
+      font-size: 10px;
+    }
+
+    &:focus {
+      outline: 0;
+      border-bottom: 1px solid rgba($blue, 0.7);
+      transition: 0.6s all ease;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  z-index: 3;
+  background: #8d0e4f;
+  font-family: $font;
+  cursor: pointer;
+}
+
+  </style>
+  </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UKAYDEE</title>
+</head>
+<style>
+  @import url(https://fonts.gstatic.com/s/sriracha/v11/0nkrC9D4IuYBgWcI9NbRTwHSoQ.woff2); 
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+/* CSS for main element */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://th.bing.com/th/id/R.eae00c06fa9fc5df38cfe2a4407e546f?rik=nzpjHMJlceLAbg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #828282;
+  margin: 10px 0;
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d692b7;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+</style>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">ETERNISE</a>
+    <nav class="nav-items">
+      <a href="website.html">HOME</a>
+      <a href="Untitled-1.html">PRODUCT</a>
+      <a href="Untitled-2.html">ABOUT</a>
+      <a href="login.html">LOGIN/SIGNUP</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>ETERNISE</h1>
+      <p>Pilippine made cosmetics .</p>
+      <button> <a href="Untitled-1.html">Shop now</a></button>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About </h2>
+        
+<p>
+    Eternise Cosmetics is a renowned beauty brand that showcases
+     the beauty and cultural heritage of the Filipino people.
+      Our brand takes inspiration from the rich history, vibrant traditions,
+       and diverse landscapes of the Philippines. We believe in celebrating 
+       and enhancing the natural beauty of every individual, offering a wide range 
+       of cosmetic products that are tailored to meet the unique needs of Filipinos.
+</p>
+      </div>
+      <img src="https://i.pinimg.com/originals/95/b5/7e/95b57ee0457e687d28f7f5eb08e8fd52.jpg" alt="me">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Social Links</span>
+        <a href="SOCIAL.html">Social Links</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UKAYDEE</title>
+</head>
+<style>
+  @import url(https://fonts.gstatic.com/s/sriracha/v11/0nkrC9D4IuYBgWcI9NbRTwHSoQ.woff2); 
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+/* CSS for main element */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://th.bing.com/th/id/R.eae00c06fa9fc5df38cfe2a4407e546f?rik=nzpjHMJlceLAbg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #6bb9f5;
+  color: #f7f6f6;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(249, 245, 245, 0.4)
+}
+
+
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d692b7;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+</style>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">ETERNISE</a>
+    <nav class="nav-items">
+      <a href="website.html">HOME</a>
+      <a href="Untitled-1.html">PRODUCT</a>
+      <a href="Untitled-2.html">ABOUT</a>
+      <a href="Untitled-3">CONTECT</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>ETERNISE</h1>
+      <p>Pilippine made cosmetics .</p>
+      <button> <a href="Untitled-1.html">Shop now</a></button>
+    </div>
+   
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Social Links</span>
+        <a href="media.html">Social Links</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Card UI Design</title>
+
+    <!-- Vendor Script -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #911a3c;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+}
+
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #212121;
+    transition: .3s linear;
+}
+
+.container .imgBx:before {
+    content: 'ETERNISE';
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
+}
+
+.container .imgBx img {
+    position: relative;
+    width: 700px;
+    transform: rotate(-30deg);
+    left: -50px;
+    transition: .9s linear;
+}
+
+.container .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.4em;
+    line-height: 1em;
+    color: #444;
+}
+
+.container .details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .details p {
+    max-width: 85%;
+    margin-left: 15%;
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 36px;
+}
+
+.container .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+.container .details button {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="imgBx">
+            <img src="https://www.rosepharmacy.com/ph1/wp-content/uploads/2018/07/71899-1.png" alt="MABELINE">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>MABELINE LIPSTICK  <br>
+                    <span>NEW YORK COLLECTION: MAUVE IT UP</span>
+                </h2>
+                <p>
+                    Featuring  smooth matte long lasting liptsick with a sleek packaging
+                    made for everyday where and will go with any makeup look.
+                    Having a natural netural color to give that right amount of color 
+                    andglow towards the face.
+                </p>
+                <h3>60 AED</h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UKAYDEE</title>
+</head>
+<style>
+  @import url(https://fonts.gstatic.com/s/sriracha/v11/0nkrC9D4IuYBgWcI9NbRTwHSoQ.woff2); 
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+
+/* CSS for main element */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://th.bing.com/th/id/R.eae00c06fa9fc5df38cfe2a4407e546f?rik=nzpjHMJlceLAbg&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d692b7;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+</style>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">ETERNISE</a>
+    <nav class="nav-items">
+      <a href="website.html">HOME</a>
+      <a href="Untitled-1.html">PRODUCT</a>
+      <a href="Untitled-2.html">ABOUT</a>
+      <a href="login.html">LOGIN/SIGNUP</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>ETERNISE</h1>
+      <p>Pilippine made cosmetics .</p>
+      <button> <a href="Untitled-1.html">Shop now</a></button>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>Social Links</h2>
+        
+<p>
+    FACEBOOK:Eternise Cosmetics
+    INSTAGRAM: @Eternise Cosmetics
+    EMAIL: EterniseCosmetics@gmail.com 
+</p>
+      </div>
+     
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Social Links</span>
+        <a href="SOCIAL.html">Social Links</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
